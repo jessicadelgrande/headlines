@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>hdlns: all the top news in one spot</title>
+	<link rel="stylesheet" href="styles/normalize.css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="styles/html5bp.css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="styles/styles.css" media="screen" charset="utf-8">
+	<meta name="description" content="">
+</head>
+
+<body>
+	<header>
+		<section class="headerContainer">
+			<a href="#" id="logoContainer">
+				<h1 id="bigLogo">headlines</h1>
+			</a>
+			<nav id="nav">
+				<ul>
+					<li><a href="#">News Source: <span id="currentNewsSource"></span></a>
+						<ul id="selectContainer">
+							<li><a href="#" class="sourceOption" id="allSources">All Sources</a></li>
+							<li><a href="#" class="sourceOption" id="nytSelect">The New York Times</a></li>
+							<li><a href="#" class="sourceOption" id="guardianSelect">The Guardian</a></li>
+							<li><a href="#" class="sourceOption" id="newsApiSelect">NewsAPI</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</section>
+	</header>
+	<div id="popUp" class="loader hidden">
+		<a href="#" class="closePopUp" id="closePopUp">&#10005;</a>
+		<div class="atomContainer">
+			<div class="atom atom1"></div>
+			<div class="atom atom2"></div>
+		</div>
+		<!-- dynamic content -->
+	</div>
+	<main id="main">
+		<!-- dynamic content -->
+	</main>
+	<script type="module" src="js/app.js"></script>
+</body>
+
+</html>
