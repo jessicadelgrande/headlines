@@ -157,10 +157,19 @@ header {
         justify-content: space-between;
         align-items: center; 
 
+        @media only screen and (max-width: 600px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
         #logoContainer {
             text-decoration: none;
             height: 164px;
-            margin-top: 72px;  
+            margin-top: 72px; 
+            
+            @media only screen and (max-width: 600px) {
+                margin-top: 24px;
+            }
         }
 
         h1 {
@@ -170,15 +179,24 @@ header {
             font-size: 4rem;
             margin: 0;
             padding-left: 0;
+
+            @media only screen and (max-width: 600px) {
+                font-size: 3rem;
+            }
         }
     
         nav {
             font-family: $nhg-bold;
-            padding: 10px 2%;
+            padding: 10px;
             text-align: right;
             line-height: 30px;
             margin-top: 10px;
             position: relative;
+
+            @media only screen and (max-width: 600px) {
+                margin-top: 0;
+                padding: 0;
+            }
     
             a {
                 display: block;
@@ -188,6 +206,7 @@ header {
                 line-height: 40px;
                 text-decoration: none;
                 transition: 0.1s all; 
+                white-space: nowrap;
     
                 &:hover {
                     background-color: #000;
@@ -200,6 +219,11 @@ header {
                 list-style: none;
                 position: relative;
                 color: #fff;
+
+                @media only screen and (max-width: 600px) {
+                    margin-top: 0;
+                    margin-bottom: 24px;
+                }
     
                 > li {
                     display: inline-block;
@@ -275,14 +299,17 @@ header {
         }
     }
 
-    .articleContent a {
-        text-decoration: none;
+    .articleContent {
 
-        &:hover {
-            text-decoration: underline;
-            color: #000;
+        a {
+            text-decoration: none;
+    
+            &:hover {
+                text-decoration: underline;
+                color: #000;
+            }
         }
-
+    
         h3 {
             margin-bottom: 0;
             margin-block-start: 8px;
@@ -290,8 +317,9 @@ header {
             font-family: $nhg-bold;
             font-size: 1.6rem;
             line-height: 1.1;
+            overflow: hidden;
         }
-
+    
         h6 {
             margin-top: 0;
             margin-bottom: 8px;
@@ -300,6 +328,7 @@ header {
             font-size: 0.7rem;
         }
     }
+    
 
     .dateTime {
         font-size: 0.8rem;

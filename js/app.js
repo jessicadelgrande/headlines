@@ -113,6 +113,8 @@ const allResults = async () => {
             article.newsSource
         );
     });
+
+
     popUp.classList.add("hidden"); 
     showArticlePopUp();  
 }
@@ -251,7 +253,7 @@ const mainFeed = () => {
 // changes colour of header & atom background on each page load
 // stores current colour to local storage
 // checks local storage to avoid duplication of previous colour
-const colours = ["redorange", "#ffa028", "yellow", "green", "#0d9ddb", "blue"];
+const colours = ["redorange", "#ffa028", "yellow", "green", "#0d9ddb"];
 let currentColour = +(localStorage.previousBGColour || -1)+1;
 currentColour = currentColour >= colours.length ? 0 : currentColour;
 document.querySelector("header").style.backgroundColor = colours[currentColour];
