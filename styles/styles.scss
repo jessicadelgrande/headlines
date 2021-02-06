@@ -344,3 +344,27 @@ header {
         margin-top: 16px;
     }
 }
+
+footer {
+    display: flex;
+    align-items: center;
+
+    .attribution {
+        margin-bottom: 24px;
+        margin-left: 24px;
+    
+        &.guardian {
+            background-image: url("../assets/images/poweredbyguardianBLACK.png");
+            background-repeat: no-repeat;
+            width: 140px;
+            height: 45px;
+        }
+    
+        &.nyTimes {
+            background-image: url("../assets/images/poweredby_nytimes_150c.png");
+            background-repeat: no-repeat;
+            width: 150px;
+            height: 30px;
+        }
+    }
+}

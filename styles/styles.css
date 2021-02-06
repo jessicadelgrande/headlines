@@ -416,4 +416,32 @@ header .headerContainer nav ul ul li:last-child {
   font-family: "NHG_Bold", Arial, Helvetica, sans-serif;
   margin-top: 16px;
 }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .attribution {
+  margin-bottom: 24px;
+  margin-left: 24px;
+}
+
+footer .attribution.guardian {
+  background-image: url("../assets/images/poweredbyguardianBLACK.png");
+  background-repeat: no-repeat;
+  width: 140px;
+  height: 45px;
+}
+
+footer .attribution.nyTimes {
+  background-image: url("../assets/images/poweredby_nytimes_150c.png");
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 30px;
+}
 /*# sourceMappingURL=styles.css.map */
