@@ -284,46 +284,47 @@ header .headerContainer nav a:hover {
   color: #fff;
 }
 
-header .headerContainer nav ul {
+header .headerContainer nav .outerDropdownContainer {
   padding: 0;
   list-style: none;
   position: relative;
-  color: #fff;
 }
 
 @media only screen and (max-width: 600px) {
-  header .headerContainer nav ul {
+  header .headerContainer nav .outerDropdownContainer {
     margin-top: 0;
     margin-bottom: 24px;
   }
 }
 
-header .headerContainer nav ul > li {
+header .headerContainer nav .outerDropdownContainer > li {
   display: inline-block;
   min-width: 196px;
   background-color: #fff;
-  color: #fff;
   border: 1px solid #000;
   position: relative;
 }
 
-header .headerContainer nav ul > li:hover > ul {
-  display: inherit;
-}
-
-header .headerContainer nav ul ul {
+header .headerContainer nav .outerDropdownContainer ul {
   display: none;
   position: absolute;
   top: 40px;
   right: -1px;
+  list-style: none;
 }
 
-header .headerContainer nav ul ul li {
+header .headerContainer nav .outerDropdownContainer ul .menuItem {
+  background-color: #fff;
+  border: 1px solid #000;
   border-bottom: 0px solid #000;
 }
 
-header .headerContainer nav ul ul li:last-child {
+header .headerContainer nav .outerDropdownContainer ul .menuItem:last-child {
   border-bottom: 1px solid #000;
+}
+
+header .headerContainer nav .open #selectContainer {
+  display: inline-block;
 }
 
 #main {

@@ -214,11 +214,10 @@ header {
                 }
             }
     
-            ul {
+            .outerDropdownContainer {
                 padding: 0;
                 list-style: none;
                 position: relative;
-                color: #fff;
 
                 @media only screen and (max-width: 600px) {
                     margin-top: 0;
@@ -229,28 +228,35 @@ header {
                     display: inline-block;
                     min-width: 196px;
                     background-color: #fff;
-                    color: #fff;
                     border: 1px solid #000;
                     position: relative;
-    
-                    &:hover > ul {
-                        display: inherit;
-                    } 
                 }
-    
+
                 ul {
                     display: none;
                     position: absolute;
                     top: 40px;
                     right: -1px;
-
-                    li {
+                    list-style: none;
+                    
+                    .menuItem {
+                        background-color: #fff;
+                        border: 1px solid #000;
                         border-bottom: 0px solid #000;
-
+                        
                         &:last-child {
                             border-bottom: 1px solid #000;
                         }
                     }
+                }
+            }
+
+            .open {
+                // border: 4px solid red;
+
+                #selectContainer {
+                    display: inline-block;
+
                 }
             }
         }

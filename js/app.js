@@ -20,6 +20,14 @@ const displaySelection = () => {
     const selectContainer = document.getElementById("selectContainer");
     const newsSource = document.getElementsByClassName("newsSource");
 
+    // open & close dropdown menu - managing for touchscreens
+    const outerDropdownContainerItem = document.querySelector(".outerDropdownContainer li");
+    const outerDropdownContainer = document.querySelector(".outerDropdownContainer");
+    outerDropdownContainerItem.addEventListener("click", (e) => {
+        e.preventDefault();
+        outerDropdownContainer.classList.toggle("open");
+    });
+
     const filterSourceLoop = (whereFrom) => {
         for (let i = 0; i < articleList.length; i++) {
             if (!newsSource[i].innerHTML.includes(whereFrom)) {
